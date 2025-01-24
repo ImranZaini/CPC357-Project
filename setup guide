@@ -1,0 +1,39 @@
+// Set the components as below:
+1. Power Supply
+3.3V → to the positive power rail
+Ground → to the negative power rail
+
+2. Servo Motor Connection:
+Orange Wire (Signal) → Connects to GPIO pin 41 of microcontroller
+Red Wire (VCC) → Connects to the positive power rail.
+Brown Wire (Ground) → Connects to the ground power rail.
+
+3. IR Sensor 1 (Top Left):
+OUT Pin → Connects to GPIO pin 14 of microcontroller.
+VCC Pin → Connects to the positive power rail.
+GND Pin → Connects to the  ground power rail.
+
+4. IR Sensor 2 (Top Right):
+Uses QWIIC cable to connect to the QWIIC port of the microcontroller port 42.
+
+5. IR Sensor 3 (Bottom Left):
+OUT Pin → Connects to GPIO pin 21 of microcontroller.
+VCC Pin → Connects to the positive power rail.
+GND Pin → Connects to the ground power rail.
+
+6. IR Sensor 4 (Bottom Right):
+Uses QWIIC cable to connect to the QWIIC port of the microcontroller port 5.
+
+7. Push Button 1:
+One Side of Button → Connected to GPIO pin 39 of the microcontroller.
+Other Side of Button → Connected to ground power rail.
+
+8. Push Button 2:
+One Side of Button → Connected to GPIO pin 40 of the microcontroller.
+Other Side of Button → Connected to ground power rail.
+
+// Software Installation
+1. Install Arduino IDE and set up a proper library as mentioned in the Software Components for the usage of ESP32 Maker Feather AIot S3 Microcontroller.
+2. Navigate to V-One Iot Platform and add a gateway.
+3. Install Iot-Kit-V-One-main library from the github and add it from the manage library in the Arduino IDE.
+4. In that folder, in vonesetting config file, change the WiFi SSID and  WiFi password of your Wifi, and add the Gateway ID token and its access token.
